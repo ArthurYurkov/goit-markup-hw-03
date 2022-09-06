@@ -134,6 +134,10 @@ body {
   background-color: #2f303a;
 }
 
+.hero-content {
+  align-items: center;
+}
+
 .hero h1 {
   font-weight: 900;
   font-size: 44px;
@@ -153,6 +157,11 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
+
+  padding: 6px 22px;
+
+  border: 0px solid transparent;
+  border-radius: 4px;
 }
 
 .order-btn:hover,
@@ -168,6 +177,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .benefits p {
@@ -177,6 +188,13 @@ body {
   color: var(--sub-text-color);
 }
 
+.benefits-list {
+  display: flex;
+  padding-top: 94px;
+}
+.benefits-point + .benefits-point {
+  margin-left: 30px;
+}
 /* what we do */
 
 .whatwedo h2 {

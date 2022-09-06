@@ -196,6 +196,15 @@ body {
   margin-left: 30px;
 }
 /* what we do */
+.whatwedo-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.whatwedo {
+  padding-top: 94px;
+}
 
 .whatwedo h2 {
   font-weight: 700;
@@ -206,7 +215,9 @@ body {
 }
 
 /* team */
-
+.team-list {
+  display: flex;
+}
 .team h2 {
   font-weight: 700;
   font-size: 36px;

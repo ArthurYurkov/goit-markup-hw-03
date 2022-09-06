@@ -1,3 +1,12 @@
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
 /* -------------variables------------- */
 :root {
   --main-text-color: #212121;
@@ -15,9 +24,27 @@ body {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
 /* --------------Header---------------- */
+.head-border {
+  border: 1px solid #ececec;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
 
 /* logo */
+.logo {
+  margin-right: 93px;
+}
+
 .logo,
 .logo-part {
   color: black;
@@ -44,6 +71,13 @@ body {
 }
 
 /* Navigation */
+.navigation-list {
+  display: flex;
+}
+
+.navigation-li + .navigation-li {
+  margin-left: 50px;
+}
 
 .navigation-bar {
   text-decoration: none;
@@ -52,19 +86,28 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.navigation :hover,
-.navigation :focus {
+.navigation-list :hover,
+.navigation-list :focus {
   color: var(--hover-color);
 }
 
 .navigation-bar.condition {
   color: var(--hover-color);
 }
+
 /* Contacts */
-.contacts :hover,
-.contacts :focus {
+.contacts {
+  margin-left: auto;
+}
+
+.contacts-hover :hover,
+.contacts-hover :focus {
   color: var(--hover-color);
 }
 
@@ -75,6 +118,13 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contacts-head + .contacts-head {
+  margin-left: 50px;
 }
 
 /* --------------Page 1---------------- */
@@ -163,6 +213,13 @@ body {
 /* --------------Page 2---------------- */
 
 /* Filter */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 56px;
+}
+
 .btn {
   font-family: inherit;
   color: var(--main-text-color);
@@ -172,6 +229,14 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+
+  padding: 6px 22px;
+
+  border: 0px solid transparent;
+  border-radius: 4px;
+}
+.filter-btn + .filter-btn {
+  margin-left: 8px;
 }
 
 .btn:hover,
@@ -181,6 +246,16 @@ body {
 }
 
 /* Products */
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-position {
+  padding-bottom: 30px;
+}
+
 .products p {
   color: var(--sub-text-color);
   font-size: 16px;
@@ -198,6 +273,8 @@ body {
 /* --------------Footer---------------- */
 .foot {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .contacts-center {
@@ -222,4 +299,12 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: #2f303a;
+}
+
+.contact-foot {
+  margin-top: 20px;
+}
+
+.addrs-wrap + .addrs-wrap {
+  margin-top: 9px;
 }

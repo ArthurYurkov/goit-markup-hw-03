@@ -26,7 +26,11 @@ body {
 
 .container {
   width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.section {
+  padding: 94px 0px;
 }
 
 /* --------------Header---------------- */
@@ -132,10 +136,14 @@ body {
 /* hero */
 .hero {
   background-color: #2f303a;
+  padding-bottom: 0px;
 }
 
 .hero-content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  padding: 106px 0px 200px 0px;
 }
 
 .hero h1 {
@@ -146,6 +154,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  max-width: 700px;
+  margin-bottom: 30px;
 }
 
 .order-btn {
@@ -159,6 +169,7 @@ body {
   cursor: pointer;
 
   padding: 6px 22px;
+  margin: 0 auto;
 
   border: 0px solid transparent;
   border-radius: 4px;
@@ -190,7 +201,6 @@ body {
 
 .benefits-list {
   display: flex;
-  padding-top: 94px;
 }
 .benefits-point + .benefits-point {
   margin-left: 30px;
@@ -203,7 +213,7 @@ body {
 }
 
 .whatwedo {
-  padding-top: 94px;
+  padding-top: 0px;
 }
 
 .whatwedo h2 {
@@ -215,8 +225,13 @@ body {
 }
 
 /* team */
+.team {
+  background: #f5f4fa;
+}
+
 .team-list {
   display: flex;
+  justify-content: space-between;
 }
 .team h2 {
   font-weight: 700;
@@ -224,6 +239,7 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .team h3 {
@@ -231,6 +247,8 @@ body {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-top: 26px;
+  margin-bottom: 10px;
 }
 
 .team p {
@@ -238,6 +256,11 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--sub-text-color);
+  margin-bottom: 30px;
+}
+
+.team-point {
+  text-align: center;
 }
 /* --------------Page 2---------------- */
 
@@ -245,7 +268,6 @@ body {
 .filter {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
   margin-bottom: 56px;
 }
 
@@ -278,11 +300,11 @@ body {
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 27px;
 }
 
 .product-position {
-  padding-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .products p {
@@ -290,6 +312,8 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
 
 .products h2 {
@@ -297,6 +321,8 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-left: 24px;
 }
 
 /* --------------Footer---------------- */

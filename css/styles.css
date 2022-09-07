@@ -20,6 +20,10 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -261,6 +265,7 @@ body {
 
 .team-point {
   text-align: center;
+  background: #ffffff;
 }
 /* --------------Page 2---------------- */
 
@@ -300,11 +305,12 @@ body {
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 27px;
+  gap: 30px;
 }
 
-.product-position {
+.product-text {
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .products p {
@@ -321,7 +327,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
+  padding-top: 20px;
   margin-left: 24px;
 }
 
